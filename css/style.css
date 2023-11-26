@@ -1,4 +1,27 @@
 
 body{
     font-family: 'Courier Prime', monospace;
+    background-color: white;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #212529 !important;
+    color: #dee2e6 !important;
+}
+
+.btnThemeMode{
+    background: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.themeModeIcon{
+    font-size: 1.5rem;
+}
+
+.themeModeIconDark{
+    font-size: 1.5rem;
+    color: #dee2e6;
+    background-color: #212529;
 }
