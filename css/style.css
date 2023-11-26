@@ -25,3 +25,19 @@ body{
     color: #dee2e6;
     background-color: #212529;
 }
+
+.navbar {
+    background: white;
+}
+
+.nav-link {
+    color: black
+}
+
+.nav-link.active{
+    text-decoration: underline;
+}
+
+.container {
+    margin-top: 5rem;
+}
