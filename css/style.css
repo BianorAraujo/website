@@ -1,14 +1,8 @@
 
 body{
     font-family: 'Courier Prime', monospace;
-    background-color: white;
-    color: black;
 }
 
-.dark-mode {
-    background-color: #212529 !important;
-    color: #dee2e6 !important;
-}
 
 .btnThemeMode{
     background: transparent;
@@ -20,16 +14,20 @@ body{
     font-size: 1.5rem;
 }
 
-.themeModeIconDark{
+/* .themeModeIconDark{
     font-size: 1.5rem;
     color: #dee2e6;
     background-color: #212529;
-}
+} */
 
 .navbar {
     background: white;
 }
 
+.navbar-darkmode {
+    background-color: rgb(33, 37, 41);
+}
+/*
 .nav-link {
     color: black
 }
@@ -37,7 +35,20 @@ body{
 .nav-link.active{
     text-decoration: underline;
 }
-
+*/
 .container {
-    margin-top: 5rem;
+    margin-top: 4rem;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    width: 95%;
+}
+
+.nav-bar {
+    display: flex;
 }
