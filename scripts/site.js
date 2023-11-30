@@ -9,4 +9,5 @@ function changeThemeMode() {
     }
     document.getElementById("toogleMode").classList.toggle("bi-sun-fill");
     document.getElementsByClassName("navbar")[0].classList.toggle("navbar-darkmode");
- }
+}
+

@@ -3,7 +3,6 @@ body{
     font-family: 'Courier Prime', monospace;
 }
 
-
 .btnThemeMode{
     background: transparent;
     border: none;
@@ -11,14 +10,8 @@ body{
 }
 
 .themeModeIcon{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
-
-/* .themeModeIconDark{
-    font-size: 1.5rem;
-    color: #dee2e6;
-    background-color: #212529;
-} */
 
 .navbar {
     background: white;
@@ -27,15 +20,7 @@ body{
 .navbar-darkmode {
     background-color: rgb(33, 37, 41);
 }
-/*
-.nav-link {
-    color: black
-}
 
-.nav-link.active{
-    text-decoration: underline;
-}
-*/
 .container {
     margin-top: 4rem;
 }
@@ -43,7 +28,6 @@ body{
 .nav-link.active {
     text-decoration: underline;
 }
-
 
 .navbar {
     width: 95%;
@@ -53,11 +37,31 @@ body{
     display: flex;
 }
 
+.navbar-brand {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.container {
+    display: grid; 
+    place-items: center;
+}
+
 footer {
-    position: fixed;
-    text-align: center;
-    height: 40px;
+    /*position: fixed; */
+    /* text-align: center; */
+    /* height: 40px; */
     bottom: 0;
     width: 100%;
     font-size: small;
+    padding-left: 5px;
+    background-color: white;
+    display: flex;
+    /* flex-direction: 1; */
+}
+
+.imgFooter {
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
