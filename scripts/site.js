@@ -9,5 +9,11 @@ function changeThemeMode() {
     }
     document.getElementById("toogleMode").classList.toggle("bi-sun-fill");
     document.getElementsByClassName("navbar")[0].classList.toggle("navbar-darkmode");
+    document.getElementsByTagName("footer")[0].classList.toggle("footer-darkmode");
+
+    for (const element of document.getElementsByClassName("imgFooter")){
+        element.classList.toggle("imgFooter-darkmode");
+     }
+    
 }
 
