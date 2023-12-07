@@ -1,6 +1,7 @@
 
 body{
     font-family: 'Courier Prime', monospace;
+    min-height: 100vh
 }
 
 .btnThemeMode{
@@ -48,20 +49,13 @@ body{
 }
 
 footer {
-    /*position: fixed; */
-    /* text-align: center; */
-    /* height: 40px; */
+    
     padding: 1.5rem;
     font-size: small;
-    /*width: 100%;
-    font-size: small;
-    padding-left: 5px;
-    background-color: white;
-    display: flex; */
-    /* flex-direction: 1; */
     background-color: rgb(33, 37, 41);
     max-width: 100% !important;
     color: white;
+    min-height: 50px;
 }
 
 .footer-darkmode {
@@ -75,6 +69,7 @@ footer {
 
 .img-container {
     display: flex;
+    padding-bottom: 5px;
 }
 
 .imgFooter {
@@ -82,4 +77,10 @@ footer {
     padding-left: 20px;
     padding-bottom: 5px;
     color: white;
+}
+
+.card-aboutme {
+    /* height: 40svh; */
+    /* margin-top: 15svh; */
+    border: none;
 }
