@@ -46,7 +46,10 @@ header{
 
 /* content */
 article{ 
-    flex:1; 
+    flex:1;
+    display: flex; 
+    align-items: center; 
+    align-content: center;
 } 
 
 .container-aboutme{

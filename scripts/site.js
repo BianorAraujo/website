@@ -10,11 +10,13 @@ function changeThemeMode() {
     document.getElementById("toogleMode").classList.toggle("bi-sun-fill");
     document.getElementsByClassName("navbar")[0].classList.toggle("navbar-darkmode");
     document.getElementsByTagName("footer")[0].classList.toggle("footer-darkmode");
-    document.getElementById("imgProfile").classList.toggle("img-profile-dark");
-
+    
     for (const element of document.getElementsByClassName("imgFooter")){
         element.classList.toggle("imgFooter-darkmode");
      }
+
+     if(document.getElementById("imgProfile") != null)
+        document.getElementById("imgProfile").classList.toggle("img-profile-dark");
     
 }
 
