@@ -47,18 +47,24 @@ header{
 /* content */
 article{ 
     flex:1;
-    display: flex; 
+    display: flex;
+    /* align-items: center; 
+    align-content: center; */
+}
+
+.card {
+    border: none;
+}
+
+/* content - aboutme */
+.article-aboutme {
     align-items: center; 
     align-content: center;
-} 
+}
 
 .container-aboutme{
     display: flex;
     align-content: center;
-}
-
-.card-aboutme {
-    border: none;
 }
 
 .row-aboutme{
@@ -76,8 +82,58 @@ article{
     border: 4px solid white;   
 }
 
+/* content - skills */
+.container-skills {
+    display:flex;
+    flex-direction: column;
+    border: none;
+}
 
+.card-row-skills {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
 
+.card-col-skills {
+    display: flex;
+    justify-content: center;
+}
+
+.col-skills-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-content {
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-skill {
+    width: 8vh;
+    margin-bottom: 20px;
+}
+
+.img-skill:hover {
+    transform: scale(1.2);
+    opacity: .6;
+}
+
+hr {
+    border-color: #aaa;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@media (max-width:770px)
+{
+    .col-skills-content {
+        justify-content: center;
+    }
+}
 
 /* footer */  
 footer{ 
@@ -111,4 +167,3 @@ footer{
 .imgFooter-darkmode {
     color: white !important;
 }
-

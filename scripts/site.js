@@ -45,6 +45,15 @@ function darkMode() {
     if(document.getElementById("imgProfile") != null)
         document.getElementById("imgProfile").classList.add("img-profile-dark");
 
+
+    //Skills
+    if(document.getElementById("express") != null)
+        document.getElementById('express').setAttribute('src', './img/skill/backend/express-dark.svg');
+
+    if(document.getElementById("sqlserver") != null)
+        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server-dark.svg');
+
+
     localStorage.setItem('theme', 'dark');
 }
 
@@ -61,6 +70,13 @@ function lightMode() {
 
     if(document.getElementById("imgProfile") != null)
         document.getElementById("imgProfile").classList.remove("img-profile-dark");
+
+    //Skills
+    if(document.getElementById("express") != null)
+        document.getElementById('express').setAttribute('src', './img/skill/backend/express.svg');
+
+    if(document.getElementById("sqlserver") != null)
+        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server.svg');
 
     localStorage.setItem('theme', 'light');
 }
