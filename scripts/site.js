@@ -50,10 +50,6 @@ function darkMode() {
     if(document.getElementById("express") != null)
         document.getElementById('express').setAttribute('src', './img/skill/backend/express-dark.svg');
 
-    if(document.getElementById("sqlserver") != null)
-        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server-dark.svg');
-
-
     localStorage.setItem('theme', 'dark');
 }
 
@@ -75,8 +71,16 @@ function lightMode() {
     if(document.getElementById("express") != null)
         document.getElementById('express').setAttribute('src', './img/skill/backend/express.svg');
 
-    if(document.getElementById("sqlserver") != null)
-        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server.svg');
-
     localStorage.setItem('theme', 'light');
+}
+
+function changeLanguage(lang){
+    var currentLocation = window.location.href;
+
+    if (lang == 'pt')
+        currentLocation = currentLocation.replace('/en/', '/pt/');
+    else if (lang == 'en')
+        currentLocation = currentLocation.replace('/pt/', '/en/');
+
+    window.location.href = currentLocation;
 }
