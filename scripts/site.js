@@ -1,4 +1,18 @@
 
+function start()
+{
+    var lang = navigator.language;
+    var currentLocation = window.location.href;
+
+    if (lang == 'pt-BR')
+        currentLocation = currentLocation.replace('/index.html', '/pt/index.html');
+    else
+        currentLocation = currentLocation.replace('/index.html', '/en/index.html');
+
+    window.location.href = currentLocation;
+
+}
+
 
 function load()
 {
