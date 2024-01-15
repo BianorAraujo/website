@@ -1,4 +1,18 @@
 
+function start()
+{
+    var lang = navigator.language;
+    var currentLocation = window.location.href;
+
+    if (lang == 'pt-BR')
+        currentLocation = currentLocation.replace('/index.html', '/pt/index.html');
+    else
+        currentLocation = currentLocation.replace('/index.html', '/en/index.html');
+
+    window.location.href = currentLocation;
+
+}
+
 
 function load()
 {
@@ -42,17 +56,24 @@ function darkMode() {
         element.classList.add("imgFooter-darkmode");
     }
 
+    //aboutme
     if(document.getElementById("imgProfile") != null)
         document.getElementById("imgProfile").classList.add("img-profile-dark");
 
 
-    //Skills
+    //skills
     if(document.getElementById("express") != null)
-        document.getElementById('express').setAttribute('src', './img/skill/backend/express-dark.svg');
+        document.getElementById('express').setAttribute('src', '../img/skill/backend/express-dark.svg');
 
-    if(document.getElementById("sqlserver") != null)
-        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server-dark.svg');
-
+    if(document.getElementById("github") != null)
+        document.getElementById('github').setAttribute('src', '../img/skill/github-dark.svg');
+    
+    //projects
+    if(document.getElementById("div-projects") != null){
+        for (const element of document.getElementsByClassName("img-projects")){
+            element.classList.add("img-projects-dark");
+        }
+    }
 
     localStorage.setItem('theme', 'dark');
 }
@@ -68,15 +89,34 @@ function lightMode() {
         element.classList.remove("imgFooter-darkmode");
     }
 
+    //aboutme
     if(document.getElementById("imgProfile") != null)
         document.getElementById("imgProfile").classList.remove("img-profile-dark");
 
-    //Skills
+    //skills
     if(document.getElementById("express") != null)
-        document.getElementById('express').setAttribute('src', './img/skill/backend/express.svg');
+        document.getElementById('express').setAttribute('src', '../img/skill/backend/express.svg');
 
-    if(document.getElementById("sqlserver") != null)
-        document.getElementById('sqlserver').setAttribute('src', './img/skill/database/sql-server.svg');
+    if(document.getElementById("github") != null)
+        document.getElementById('github').setAttribute('src', '../img/skill/github.svg');
+
+    //projects
+    if(document.getElementById("div-projects") != null){
+        for (const element of document.getElementsByClassName("img-projects")){
+            element.classList.remove("img-projects-dark");
+        }
+    }
 
     localStorage.setItem('theme', 'light');
+}
+
+function changeLanguage(lang){
+    var currentLocation = window.location.href;
+
+    if (lang == 'pt')
+        currentLocation = currentLocation.replace('/en/', '/pt/');
+    else if (lang == 'en')
+        currentLocation = currentLocation.replace('/pt/', '/en/');
+
+    window.location.href = currentLocation;
 }
