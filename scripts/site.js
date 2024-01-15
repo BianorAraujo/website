@@ -5,9 +5,9 @@ function start()
     var currentLocation = window.location.href;
 
     if (lang == 'pt-BR')
-        currentLocation = currentLocation.replace('/index.html', '/pt/index.html');
+        currentLocation = currentLocation + "/pt/index.html"; // .replace('/index.html', '/pt/index.html');
     else
-        currentLocation = currentLocation.replace('/index.html', '/en/index.html');
+        currentLocation = currentLocation + "/en/index.html"; // .replace('/index.html', '/en/index.html');
 
     window.location.href = currentLocation;
 
