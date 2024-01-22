@@ -48,6 +48,58 @@ header{
     font-size: 1.3rem;
 }
 
+.main-navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+}
+
+.div-selectedFlag{
+    position: relative;
+    width: 35px;
+    margin: 0 auto;
+    padding: 5px 5px;
+}
+
+.div-optionsFlag{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-inline-start: 0px;
+    display: none;
+}
+
+.dropdown{
+    position: absolute;
+    top: 70%;
+    right: 15px;
+    padding-inline-start: 0px;
+    transition: all 0.3s ease-out;
+    list-style: none;
+}
+
+.div-optionsFlag:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.div-optionsFlag a {
+    width: 29px;
+    display: block;
+    text-decoration: none;
+    padding: 2px;
+    transition: all 0.3s ease-out;
+}
+
+.show-options{
+    display: block;
+}
+
 /* content */
 article{ 
     flex:1;
@@ -109,6 +161,9 @@ article{
     border: 1px solid white;
 }
 
+.card-text{
+    text-align: left;
+}
 
 /* content - skills */
 .container-skills {
