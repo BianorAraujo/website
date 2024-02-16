@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DXRD0RWWV"></script>
@@ -30,10 +31,7 @@
             <div class="nav-bar fixed-top">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Bianor Araujo</a>
-                        <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <a class="navbar-brand" href="index.html">Bianor Araujo</a>
                         
                         <div class="main-navbar">
                             <div class="collapse navbar-collapse" id="navbarNav">
@@ -49,8 +47,13 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
 
-                            <div style="display: flex;">
+                        <div class="nav-menu">
+                            <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="div-flag">
                                 <div id="selectedFlag" class="div-selectedFlag">
                                     <a href="#"><img src="../img/language/gb.svg" ></a>
                                 </div>
@@ -61,14 +64,15 @@
                                     <a href="#"><img src="../img/language/br.svg" ></a>
                                 </div>
                             </div>
+
+                            <button class="btnThemeMode" onclick="changeThemeMode()">
+                                <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
+                            </button>
                         </div>
-                    
+
                     </div>
                 </nav>
-
-                <button class="btnThemeMode" onclick="changeThemeMode()">
-                    <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
-                </button>
+                
             </div>
         </header>
         
