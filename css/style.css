@@ -165,7 +165,7 @@ article{
 
 .img-projects{
     height: 201px;
-    width: 365px;
+    width: 100%;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -258,7 +258,7 @@ footer{
 }
 
 /* Mobile */
-@media (max-width:770px)
+@media (max-width:768px)
 {
     /* content - skills */
     .col-skills-content {
@@ -266,7 +266,7 @@ footer{
     }
 }
 
-@media (max-width:1000px)
+@media (max-width:1000px) and (min-width:768px)
 {
     /* header, navbar */
     .nav-menu
@@ -287,5 +287,13 @@ footer{
         padding-inline-start: 0px;
         transition: all 0.3s ease-out;
         list-style: none;
+    }
+
+    .img-projects{
+        width: 100%;
+    }
+
+    .row-cols-md-3>* {
+        width: 50%;
     }
 }
