@@ -22,9 +22,6 @@ function load()
         localStorage.setItem('theme', 'light');
 
     setThemeMode(theme);
-
-    createSelectFlag();
-
 }
 
 function setThemeMode(themeAtual) {
@@ -121,29 +118,4 @@ function changeLanguage(lang){
         currentLocation = currentLocation.replace('/pt/', '/en/');
 
     window.location.href = currentLocation;
-}
-
-function createSelectFlag(){
-
-    document.getElementById('selectedFlag').addEventListener('click', function() {
-        showOptions();
-    });
-
-    document.getElementById('gb-flag').addEventListener('click', function() {
-        changeLanguage('en');
-    });
-
-    document.getElementById('br-flag').addEventListener('click', function() {
-        changeLanguage('pt');
-    });
-}
-
-function showOptions() {
-
-    var currentLocation = window.location.href;
-    
-    if(currentLocation.includes('/pt/'))
-        document.getElementById("gb-flag").classList.toggle("show-options");
-    else
-        document.getElementById("br-flag").classList.toggle("show-options");
 }

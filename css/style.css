@@ -42,18 +42,19 @@ header{
     background: transparent;
     border: none;
     cursor:pointer;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .themeModeIcon{
     font-size: 1.3rem;
 }
 
-.main-navbar{
-    display: flex;
-    justify-content: space-between;
-    width: 82%;
-    margin: 0px 20px;
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.nav-link {
+    padding-left: 20px !important;
 }
 
 .div-selectedFlag{
@@ -69,15 +70,6 @@ header{
     flex-direction: column;
     padding-inline-start: 0px;
     display: none;
-}
-
-.dropdown{
-    position: absolute;
-    top: 70%;
-    right: 68px;
-    padding-inline-start: 0px;
-    transition: all 0.3s ease-out;
-    list-style: none;
 }
 
 .div-optionsFlag:after {
@@ -117,8 +109,6 @@ header{
 article{ 
     flex:1;
     display: flex;
-    /* align-items: center; 
-    align-content: center; */
 }
 
 .card {
@@ -210,7 +200,7 @@ article{
 }
 
 .img-skill {
-    width: 8vh;
+    width: 6vh;
     margin-bottom: 20px;
 }
 
@@ -261,56 +251,43 @@ footer{
 /* Mobile */
 @media (max-width:768px)
 {
-    /* header, navbar */
-    .navbar-brand{
-        font-size: larger;
-    }
-
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
-    .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
-    {
-        flex-wrap: nowrap;
-    }
-
     /* content - skills */
     .col-skills-content {
         justify-content: center;
+    }
+
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        padding-left: 0px !important;
+    }
+
+    .div-selectedFlag {
+        display: none;
     }
 }
 
 @media (max-width:1000px) and (min-width:768px)
 {
-    /* header, navbar */
-    .nav-menu
-    {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .navbar-brand{
-        font-size: larger;
-    }
-
-    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, 
-    .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl
-    {
-        flex-wrap: nowrap;
-    }
-
-    .dropdown{
-        position: absolute;
-        top: 70%;
-        right: 91px;
-        padding-inline-start: 0px;
-        transition: all 0.3s ease-out;
-        list-style: none;
-    }
-
     .img-projects{
         width: 100%;
     }
 
     .row-cols-md-3>* {
         width: 50%;
+    }
+
+    .navbar-nav {
+        margin-left: 0px;
+    }
+
+    .nav-link {
+        padding-left: 0px !important;
+    }
+
+    .div-selectedFlag {
+        display: none;
     }
 }
