@@ -122,6 +122,40 @@ article{
     align-items: center;
 }
 
+.home-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-div-text{
+    height: 150px;
+}
+
+.home-qrcode{
+    height: 170px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(33, 37, 41);
+}
+
+.home-link-dark{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.home-qrcode img{
+    width: 160px;
+}
+
 /* content - aboutme */
 .article-aboutme {
     align-items: center; 

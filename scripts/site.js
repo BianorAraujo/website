@@ -55,6 +55,18 @@ function darkMode() {
         element.classList.add("imgFooter-darkmode");
     }
 
+    //home
+    var lang = navigator.language;
+    if(document.getElementById("qrcodeCurriculum") != null){
+        if(lang == "pt-BR")
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en-dark.png');
+        else
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt-dark.png');
+    }
+
+    if(document.getElementById("linkCurriculum") != null)
+        document.getElementById("linkCurriculum").classList.add("home-link-dark");
+
     //aboutme
     if(document.getElementById("imgProfile") != null)
         document.getElementById("imgProfile").classList.add("img-profile-dark");
@@ -87,6 +99,18 @@ function lightMode() {
     for (const element of document.getElementsByClassName("imgFooter")){
         element.classList.remove("imgFooter-darkmode");
     }
+
+    //home
+    var lang = navigator.language;
+    if(document.getElementById("qrcodeCurriculum") != null){
+        if(lang == "pt-BR")
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en.png');
+        else
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt.png');
+    }
+
+    if(document.getElementById("linkCurriculum") != null)
+        document.getElementById("linkCurriculum").classList.remove("home-link-dark");
 
     //aboutme
     if(document.getElementById("imgProfile") != null)
