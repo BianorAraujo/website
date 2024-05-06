@@ -56,13 +56,13 @@ function darkMode() {
     }
 
     //home
-    // var lang = navigator.language;
-    // if(document.getElementById("qrcodeCurriculum") != null){
-    //     if(lang == "pt-BR")
-    //         document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en-dark.png');
-    //     else
-    //         document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt-dark.png');
-    // }
+    var lang = navigator.language;
+    if(document.getElementById("qrcodeCurriculum") != null){
+        if(lang == "pt-BR")
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en-dark.png');
+        else
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt-dark.png');
+    }
 
     if(document.getElementById("linkCurriculum") != null)
         document.getElementById("linkCurriculum").classList.add("home-link-dark");
@@ -101,13 +101,13 @@ function lightMode() {
     }
 
     //home
-    // var lang = navigator.language;
-    // if(document.getElementById("qrcodeCurriculum") != null){
-    //     if(lang == "pt-BR")
-    //         document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en.png');
-    //     else
-    //         document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt.png');
-    // }
+    var lang = navigator.language;
+    if(document.getElementById("qrcodeCurriculum") != null){
+        if(lang == "pt-BR")
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-en.png');
+        else
+            document.getElementById('qrcodeCurriculum').setAttribute('src', '../img/qrcode/qrcode-pt.png');
+    }
 
     if(document.getElementById("linkCurriculum") != null)
         document.getElementById("linkCurriculum").classList.remove("home-link-dark");
