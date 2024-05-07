@@ -48,6 +48,7 @@ function darkMode() {
 
     document.documentElement.setAttribute('data-bs-theme','dark')
     document.getElementById('toogleMode').classList.add('bi-sun-fill');
+    document.getElementById('toogleMode').classList.add('themeModeIconDark');
     document.getElementsByClassName('navbar')[0].classList.add('navbar-darkmode');
     document.getElementsByTagName('footer')[0].classList.add('footer-darkmode');
 
@@ -92,6 +93,7 @@ function lightMode() {
 
     document.documentElement.setAttribute('data-bs-theme','light')
     document.getElementById('toogleMode').classList.remove('bi-sun-fill');
+    document.getElementById('toogleMode').classList.remove('themeModeIconDark');
     document.getElementsByClassName('navbar')[0].classList.remove('navbar-darkmode');
     document.getElementsByTagName('footer')[0].classList.remove('footer-darkmode');
 
