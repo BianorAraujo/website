@@ -47,6 +47,11 @@ header{
 
 .themeModeIcon{
     font-size: 1.3rem;
+    color: black;
+}
+
+.themeModeIconDark{
+    color: white;
 }
 
 .navbar-nav {
