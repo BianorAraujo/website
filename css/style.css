@@ -139,7 +139,7 @@ article{
 }
 
 .home-qrcode{
-    height: 170px;
+    height: 250px;
     display: flex;
     align-items: center;
     flex-direction: column;
