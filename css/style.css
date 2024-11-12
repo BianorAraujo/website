@@ -46,7 +46,7 @@ header{
 }
 
 .themeModeIcon{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: black;
 }
 
@@ -268,7 +268,7 @@ footer{
 }
 
 .imgFooter {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(33, 37, 41); 
 }
 
@@ -276,7 +276,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 150px;
+    width: 130px;
     height: 50px;
 }
 
