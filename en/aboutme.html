@@ -59,22 +59,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="projects.html">Projects</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Language
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:changeLanguage('pt')">Portuguese</a></li>
-                                        <li><a class="dropdown-item" href="javascript:changeLanguage('en')">English</a></li>
-                                    </ul>
-                                </li>
                             </ul>
                         
-                            <div class="div-flag d-flex">
+                            <button class="btnFlagChange d-flex" onclick="changeLanguage('pt')">
                                 <div id="selectedFlag" class="div-selectedFlag">
-                                    <img src="../img/language/ie.svg">
+                                    <img src="../img/language/br.svg">
                                 </div>
-                            </div>
+                            </button>
 
                             <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
                                 <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>

@@ -59,22 +59,13 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="projects.html">Projetos</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Idioma
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="javascript:changeLanguage('pt')">Português</a></li>
-                                        <li><a class="dropdown-item" href="javascript:changeLanguage('en')">Inglês</a></li>
-                                    </ul>
-                                </li>
                             </ul>
-                        
-                            <div class="div-flag d-flex">
+
+                            <button class="btnFlagChange d-flex" onclick="changeLanguage('en')">
                                 <div id="selectedFlag" class="div-selectedFlag">
-                                    <img src="../img/language/br.svg">
+                                    <img src="../img/language/us.svg">
                                 </div>
-                            </div>
+                            </button>
 
                             <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
                                 <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
@@ -95,7 +86,7 @@
                     <div class="home-qrcode">
                         <img id="qrcode-pt-resume" src="../img/qrcode/qrcode-pt.png"/>
                         <span>Escaneie meu currículo</span>
-                        <span>ou clique <a id="linkCurriculum" class="home-link" href="../docs/Bianor Araujo - Pt.pdf">aqui</a></span>
+                        <span>ou clique <a id="linkCurriculum" class="home-link" href="../docs/Bianor Araujo - Pt.pdf" alt="Currículo">aqui</a></span>
                     </div>
                 </div>
             </div>

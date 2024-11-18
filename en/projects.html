@@ -61,22 +61,13 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="projects.html">Projects</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Language
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="javascript:changeLanguage('pt')">Portuguese</a></li>
-                                    <li><a class="dropdown-item" href="javascript:changeLanguage('en')">English</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     
-                        <div class="div-flag d-flex">
-                            <div id="selectedFlag" class="div-selectedFlag">
-                                <img src="../img/language/ie.svg">
-                            </div>
-                        </div>
+                        <button class="btnFlagChange d-flex" onclick="changeLanguage('pt')">
+                          <div id="selectedFlag" class="div-selectedFlag">
+                              <img src="../img/language/br.svg">
+                          </div>
+                        </button>
 
                         <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
                             <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
@@ -91,6 +82,23 @@
         <article>
             <div id="div-projects" class="container text-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4 row-project">
+					<div class="col">
+						<div class="card h-100">
+						  <a href="https://www.dermathus.com.br" target="_blank">
+							<img class="img-projects" src="../img/project/dermathus.png" class="card-img-top">
+						  </a>
+						  <div class="card-body">
+							<h5 class="card-title">Dermathus</h5>
+							<p class="card-text">
+							  Institutional website for a veterinary clinic. <br>
+							  - Angular 16 <br>
+							  - Bootstrap 5 <br>
+							  - HTML 5 <br>
+                              - CSS 3 <br>
+							</p>
+						  </div>
+						</div>
+					</div>
                     <div class="col">
                       <div class="card h-100">
                         <a href="https://www.kalculando.com.br" target="_blank">
