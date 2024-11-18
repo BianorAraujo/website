@@ -45,6 +45,12 @@ header{
     margin-top: 5px;
 }
 
+.btnFlagChange{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .themeModeIcon{
     font-size: 1.2rem;
     color: black;
@@ -292,6 +298,10 @@ footer{
 /* Mobile */
 @media (max-width:768px)
 {
+    .img-projects{
+        width: 100%;
+        height: 100%;
+    }
     /* content - skills */
     .col-skills-content {
         justify-content: center;
@@ -305,8 +315,8 @@ footer{
         padding-left: 0px !important;
     }
 
-    .div-selectedFlag {
-        display: none;
+    .btnThemeMode {
+        margin-left: 8px;
     }
 }
 
@@ -314,6 +324,7 @@ footer{
 {
     .img-projects{
         width: 100%;
+        height: 100%;
     }
 
     .row-cols-md-3>* {
@@ -328,7 +339,7 @@ footer{
         padding-left: 0px !important;
     }
 
-    .div-selectedFlag {
-        display: none;
+    .btnThemeMode {
+        margin-left: 8px;
     }
 }

@@ -37,58 +37,66 @@
     
     <body onload="load()">
     
-      <header>
-        <div class="nav-bar fixed-top">
-            
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Bianor Araujo</a>
+      	<header>
+			<div class="nav-bar fixed-top">
+				
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.html">Bianor Araujo</a>
 
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+						<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-                    <div class="navbar-collapse collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutme.html">Sobre mim</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="skills.html">Habilidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="projects.html">Projetos</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Idioma
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="javascript:changeLanguage('pt')">Português</a></li>
-                                    <li><a class="dropdown-item" href="javascript:changeLanguage('en')">Inglês</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    
-                        <div class="div-flag d-flex">
-                            <div id="selectedFlag" class="div-selectedFlag">
-                                <img src="../img/language/br.svg">
-                            </div>
-                        </div>
+						<div class="navbar-collapse collapse" id="navbarNav">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link" href="aboutme.html">Sobre mim</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="skills.html">Habilidades</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="projects.html">Projetos</a>
+								</li>
+							</ul>
+						
+							<button class="btnFlagChange d-flex" onclick="changeLanguage('en')">
+							<div id="selectedFlag" class="div-selectedFlag">
+								<img src="../img/language/us.svg">
+							</div>
+							</button>
 
-                        <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
-                            <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-            
-        </div>
-      </header>
+							<button class="btnThemeMode d-flex" onclick="changeThemeMode()">
+								<i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
+							</button>
+						</div>
+					</div>
+				</nav>
+				
+			</div>
+      	</header>
         
         <article>
             <div id="div-projects" class="container text-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4 row-project">
+					<div class="col">
+						<div class="card h-100">
+						  <a href="https://www.dermathus.com.br" target="_blank">
+							<img class="img-projects" src="../img/project/dermathus.png" class="card-img-top">
+						  </a>
+						  <div class="card-body">
+							<h5 class="card-title">Dermathus</h5>
+							<p class="card-text">
+							  Site institucional de uma clínica veterinária. <br>
+							  - Angular 16 <br>
+							  - Bootstrap 5 <br>
+							  - HTML 5 <br>
+                              - CSS 3 <br>
+							</p>
+						  </div>
+						</div>
+					</div>
                     <div class="col">
                       <div class="card h-100">
                         <a href="https://www.kalculando.com.br" target="_blank">
