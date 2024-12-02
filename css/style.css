@@ -173,6 +173,23 @@ article{
     align-content: center;
 }
 
+.aboutme-content {
+    padding: 10px 30px 10px 30px;
+}
+
+.text-aboutme {
+    padding: 0px 30px;
+}
+
+.flag-aboutme {
+    width: 15px;
+    margin-right: 10px;
+}
+
+.text-title {
+    margin-bottom: 40px;
+}
+
 .container-aboutme{
     display: flex;
     align-content: center;
