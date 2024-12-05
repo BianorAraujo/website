@@ -75,6 +75,11 @@ header{
     padding: 5px 5px;
 }
 
+.div-selectedFlag img {
+    border: 1.5px solid white;
+    border-radius: 2px;
+}
+
 .div-optionsFlag{
     display: flex;
     justify-content: flex-start;
@@ -210,6 +215,15 @@ article{
     border: 4px solid white;   
 }
 
+#imgProfile {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+#imgProfile.hidden {
+    opacity: 0;
+}
+
 /* content - projects */
 .row-project{
     margin: 30px;
@@ -334,6 +348,10 @@ footer{
 
     .btnThemeMode {
         margin-left: 8px;
+    }
+
+    .text-title {
+        padding-top: 40px;
     }
 }
 
