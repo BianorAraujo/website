@@ -17,9 +17,19 @@ function start()
 function load()
 {
     let theme = localStorage.getItem('theme');
-
+    
     if(theme == null)
-        localStorage.setItem('theme', 'light');
+    {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            localStorage.setItem('theme', 'dark');
+            theme = 'dark';
+        }
+        else
+        {
+            localStorage.setItem('theme', 'light');
+            theme = 'light';
+        }
+    }
 
     setThemeMode(theme);
 }
