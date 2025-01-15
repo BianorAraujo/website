@@ -155,26 +155,31 @@ function changeLanguage(lang){
 
 
 //Carousel
-const carousel = document.getElementById('imgProfile');
-
-let currentIndex = 1;
-const totalImages = 3;
-const swapInterval = 5000;
-
-function updateCarousel(currentIndex) {
-
-    if (carousel) {
-        carousel.classList.add('hidden');
-        
-        setTimeout(() => {
-            carousel.setAttribute('src', `../img/profile${currentIndex}.jpeg`);
-            carousel.classList.remove('hidden');
-        }, 1000);
-    }
+function isMobile() {
+    return window.matchMedia("(max-width: 768px)").matches;
 }
+  
+if (!isMobile()) {    
+    const carousel = document.getElementById('imgProfile');
 
-let autoSwap = setInterval(() => {
-    currentIndex = (currentIndex < totalImages) ? currentIndex + 1 : 1;
-    updateCarousel(currentIndex);
-}, swapInterval);
+    let currentIndex = 1;
+    const totalImages = 3;
+    const swapInterval = 5000;
 
+    function updateCarousel(currentIndex) {
+
+        if (carousel) {
+            carousel.classList.add('hidden');
+            
+            setTimeout(() => {
+                carousel.setAttribute('src', `../img/profile${currentIndex}.jpeg`);
+                carousel.classList.remove('hidden');
+            }, 1000);
+        }
+    }
+
+    let autoSwap = setInterval(() => {
+        currentIndex = (currentIndex < totalImages) ? currentIndex + 1 : 1;
+        updateCarousel(currentIndex);
+    }, swapInterval);
+}
