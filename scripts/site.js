@@ -10,7 +10,6 @@ function start()
         currentLocation = currentLocation + "en/index.html";
 
     window.location.href = currentLocation;
-
 }
 
 
@@ -32,6 +31,9 @@ function load()
     }
 
     setThemeMode(theme);
+
+    getYear();
+
 }
 
 function setThemeMode(themeAtual) {
@@ -151,6 +153,16 @@ function changeLanguage(lang){
         currentLocation = currentLocation.replace('/pt/', '/en/');
 
     window.location.href = currentLocation;
+}
+
+function getYear() {
+
+    const spanElement = document.getElementById("current-year");
+
+    if (spanElement) {
+        var year = new Date().getFullYear();
+        spanElement.textContent += year;
+    }
 }
 
 
