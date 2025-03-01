@@ -33,65 +33,67 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link href="../css/style.css" rel="stylesheet">
-        
-        <title>Projects</title>
     </head>
     
     <body onload="load()">
     
-      <header>
-        <div class="nav-bar fixed-top">
+        <header>
+            <div class="nav-bar fixed-top">
             
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Bianor Araujo</a>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">Bianor Araujo</a>
 
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="navbar-collapse collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutme.html">About me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="skills.html">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="projects.html">Projects</a>
-                            </li>
-                        </ul>
-                    
-                        <button class="btnFlagChange d-flex" onclick="changeLanguage('pt')">
-                          <div id="selectedFlag" class="div-selectedFlag">
-                              <img src="../img/language/br.svg">
-                          </div>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
-                            <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
-                        </button>
+                        <div class="navbar-collapse collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutme.html">About me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="skills.html">Skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="projects.html">Projects</a>
+                                </li>
+                            </ul>
+                        
+                            <button class="btnFlagChange d-flex" onclick="changeLanguage('pt')">
+                            <div id="selectedFlag" class="div-selectedFlag">
+                                <img src="../img/language/br.svg">
+                            </div>
+                            </button>
+
+                            <button class="btnThemeMode d-flex" onclick="changeThemeMode()">
+                                <i id="toogleMode" class="bi-moon-fill themeModeIcon"></i>
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            
-        </div>
-    </header>
+                </nav>
+                
+            </div>
+        </header>
         
         <article>
             <div id="div-projects" class="container text-center">
                 <div class="row row-cols-1 row-cols-md-3 g-4 row-project">
 					<div class="col">
 						<div class="card h-100">
-                            <div>
-                                <a href="https://www.dermathus.com.br" target="_blank">
+                            <div class="card-image">
+                                <div>
                                     <img class="img-projects" src="../img/project/dermathus.png" class="card-img-top">
-                                </a>
-                                <!-- <div>
-                                    <a href="www.bianoraraujo.com"><div class="rounded-button"><i class="bi bi-github"></i></div></a>
-                                    <a class="rounded-button">2</a>
-                                </div> -->
+                                </div>
+                                <div class="card-link">
+                                    <a href="https://github.com/BianorAraujo/dermathus" title="Dermathus - GitHub" target="_blank">
+                                        <div class="project-link"><i class="bi bi-github"></i></div>
+                                    </a>
+                                    <a href="https://www.dermathus.com.br" title="Dermathus - Website" target="_blank">
+                                        <div class="project-link"><i class="bi bi-link-45deg"></i></div>
+                                    </a>
+                                </div>
                             </div>
 							<div class="card-body">
 								<h5 class="card-title">Dermathus</h5>
@@ -108,9 +110,44 @@
 					</div>
                     <div class="col">
 						<div class="card h-100">
-							<a href="https://github.com/BianorAraujo/academic-record" target="_blank">
-								<img class="img-projects" src="../img/project/cadastro.png" class="card-img-top">
-							</a>
+                            <div class="card-image">
+                                <div>
+								    <img class="img-projects" src="../img/project/company-app.png" class="card-img-top">
+                                </div>
+                                <div class="card-link">
+                                    <a href="https://github.com/BianorAraujo/company-api" title="CompanyApp - GitHub" target="_blank">
+                                        <div class="project-link"><i class="bi bi-github"></i></div>
+                                    </a>
+                                </div>
+							</div>
+							<div class="card-body">
+								<h5 class="card-title">Company Registration</h5>
+								<p class="card-text">
+									A full stack skills demo for registering companies and their information. <br>
+									- Angular 16 <br>
+									- Bootstrap <br>
+									- .NET 9 <br>
+									- Dapper ORM <br>
+                                    - XUnit <br>
+                                    - Moq <br>
+                                    - SQL Server <br>
+									- Docker
+								</p>
+							</div>
+						</div>
+                    </div>
+                    <div class="col">
+						<div class="card h-100">
+                            <div class="card-image">
+                                <div>
+								    <img class="img-projects" src="../img/project/cadastro.png" class="card-img-top">
+                                </div>
+                                <div class="card-link">
+                                    <a href="https://github.com/BianorAraujo/academic-record" title="AcademicApp - GitHub" target="_blank">
+                                        <div class="project-link"><i class="bi bi-github"></i></div>
+                                    </a>
+                                </div>
+                            </div>
 							<div class="card-body">
 								<h5 class="card-title">Academic Record</h5>
 								<p class="card-text">
@@ -127,9 +164,19 @@
                     </div>
                     <div class="col">
 						<div class="card h-100">
-							<a href="https://www.kalculando.com.br" target="_blank">
-								<img class="img-projects" src="../img/project/kalculando.png" class="card-img-top">
-							</a>
+                            <div class="card-image">
+                                <div>
+								    <img class="img-projects" src="../img/project/kalculando.png" class="card-img-top">
+                                </div>
+                                <div class="card-link">
+                                    <a href="https://github.com/BianorAraujo/kalculando" title="Kalculando - GitHub" target="_blank">
+                                        <div class="project-link"><i class="bi bi-github"></i></div>
+                                    </a>
+                                    <a href="https://www.kalculando.com.br" title="Kalculando - Website" target="_blank">
+                                        <div class="project-link"><i class="bi bi-link-45deg"></i></div>
+                                    </a>
+                                </div>
+                            </div>
 							<div class="card-body">
 								<h5 class="card-title">Kalculando</h5>
 								<p class="card-text">
@@ -144,9 +191,16 @@
                     </div>
                     <div class="col">
 						<div class="card h-100">
-							<a href="https://somaisumk.vercel.app" target="_blank">
-								<img class="img-projects" src="../img/project/somaiumk.png" class="card-img-top">
-							</a>
+                            <div class="card-image">
+                                <div>
+								    <img class="img-projects" src="../img/project/somaiumk.png" class="card-img-top">
+                                </div>
+                                <div class="card-link">
+                                    <a href="https://somaisumk.vercel.app" title="Só + 1K - Website" target="_blank">
+                                        <div class="project-link"><i class="bi bi-link-45deg"></i></div>
+                                    </a>
+                                </div>
+                            </div>
 							<div class="card-body">
 								<h5 class="card-title">Só + 1K</h5>
 								<p class="card-text">

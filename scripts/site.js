@@ -96,6 +96,10 @@ function darkMode() {
         for (const element of document.getElementsByClassName("img-projects")){
             element.classList.add("img-projects-dark");
         }
+
+        for (const element of document.getElementsByClassName("project-link")){
+            element.classList.add("project-link-dark");
+        }
     }
 
     localStorage.setItem('theme', 'dark');
@@ -138,6 +142,10 @@ function lightMode() {
     if(document.getElementById("div-projects") != null){
         for (const element of document.getElementsByClassName("img-projects")){
             element.classList.remove("img-projects-dark");
+        }
+
+        for (const element of document.getElementsByClassName("project-link")){
+            element.classList.remove("project-link-dark");
         }
     }
 
